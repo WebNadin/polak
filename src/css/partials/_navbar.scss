@@ -1,0 +1,41 @@
+.contacts{
+  color:$second-color;
+  font-weight:500;
+  line-height:$line-height-small;
+  padding:$padding-base 0;
+  @media (min-width:$screen-sm-min){
+    color:$blue;
+    margin-left:25%;
+  }
+  @media (min-width: $screen-lg-min) {
+    color:$blue;
+    font-size:$font-size-large;
+  }
+}
+.flag-item{
+  display:inline-block;
+  & a{
+    padding:0;
+  }
+}
+.header-info-left {
+  padding:$padding-base 0;
+}
+.header-info-right{
+  color:$primary-color;
+}
+.nav img{
+  height:$img-height-base;
+  @media (max-width: $screen-sm-min) {
+    height:$img-height-large;
+  }
+  @media (min-width: $screen-lg-min) {
+    height:$img-height-large;
+  }
+}
+.passive{
+  opacity:0.4;
+}
+.passive:hover{
+  opacity:1;
+}

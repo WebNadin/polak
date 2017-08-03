@@ -1,0 +1,76 @@
+$background-height-base: 600px;
+$background-height-large: 700px;
+$img-height-base: 25px;
+$img-height-large: ceil(($img-height-base * 1.2));
+
+$slide-max-height:500px;
+
+$border-radius-base:.5rem;
+$border-radius-large:ceil(($border-radius-base * 2));
+
+$font-stack:'PT Sans Narrow', sans-serif;
+$font-size-base:18px;
+$font-size-small:ceil(($font-size-base * 0.8));
+$font-size-large:ceil(($font-size-base * 1.2));
+$font-size-largest:ceil(($font-size-base * 1.5));
+$font-size-h1:ceil(($font-size-base * 3));
+$font-size-h1-small:ceil(($font-size-base * 2));
+$font-size-h1-large:ceil(($font-size-base * 3.5));
+$font-size-h2:ceil(($font-size-base * 2.5));
+$font-size-h2-small:ceil(($font-size-base * 1.6));
+$font-size-h3:ceil(($font-size-base * 1.7));
+$font-size-h4:ceil(($font-size-base * 1.1));
+
+$icon-font-size:ceil(($font-size-base * 2.5));
+$icon-triangle-font-size:ceil(($font-size-base * 3));
+$h3-height:ceil(($font-size-base * 4));
+
+$font-wight:300;
+
+$blue:#215186;
+$blue-light:lighten($blue, 7%);
+$blue-dark:darken($blue, 5%);
+$blue-rgba:rgba(54,100,139,.7);
+
+$gray-darker:lighten(#000, 13.5%);
+$gray-dark:lighten(#000, 20%);
+$gray:lighten(#000, 30%);
+$gray-light:lighten(#000, 50%);
+$gray-lightest:lighten(#000, 90%);
+
+$green:#00CD00;
+$green-dark:darken($green, 20%);
+$green-rgba:rgba(102,205,0,.3);
+
+$yellow:#FFF68F;
+
+$background-color:#f8f8f8;
+$background-color-rgba:rgba(255,255,255,.7);
+$background-second-color-rgba:rgba(0,0,0,.7);
+$primary-color:$gray;
+$second-color:#fff;
+
+$line-height:1.2;
+$line-height-small:ceil(($line-height * 0.5));
+
+$margin:40px;
+$margin-large:ceil(($margin * 2.5));
+$margin-bottom: 17%;
+$margin-bottom-small: 10%;
+
+
+$padding-base:10px;
+$padding-small:ceil(($padding-base * 0.2));
+$padding-large:ceil(($padding-base * 1.5));
+
+
+$screen-sm-min: 768px; /* планшети, 768px и шире */
+$screen-md-min: 992px; /*  настольные мониторы, 992px и шире */
+$screen-lg-min: 1200px; /* большие настольные мониторы, 1200px и шире */
+
+%background-img-properties{
+  background-position:top;
+  background-size:cover;
+}
+
+

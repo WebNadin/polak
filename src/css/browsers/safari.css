@@ -1,0 +1,64 @@
+::i-block-chrome, p.wraper-info-phone{
+        font-family: Helvetica, Arial, sans-serif;
+    }
+@media screen and (max-width:505px) and ( -webkit-min-device-pixel-ratio:0 ){
+    ::i-block-chrome, p.wraper-info-phone{
+        font-family: Helvetica, Arial, sans-serif;
+    }
+}
+@media screen and (max-width:505px) and ( -webkit-min-device-pixel-ratio:0 ){
+    ::i-block-chrome, .wide.safari {
+        font-size:40px;
+    }
+    ::i-block-chrome, a.button-call.safari {
+        font-size:18px;
+        margin-top:50px;
+    }
+}
+@media screen and (min-width:768px) and ( -webkit-min-device-pixel-ratio:0 ){
+    ::i-block-chrome, p.wraper-info-phone{
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    ::i-block-chrome, .safari-wraper{
+        background-color:rgba(255,255,255,.7);
+    }
+    ::i-block-chrome, a.button-call.safari {
+        margin-top:50px;
+    }
+}
+@media screen and ( -webkit-min-device-pixel-ratio : 0 ) and (min-width:768px) and (max-width:992px){
+    ::i-block-chrome, .wide.safari {
+        font-size:30px;
+    }
+
+    ::i-block-chrome, .safari.family{
+       background-image:url(../../img/family-sm.jpg);
+    }
+}
+@media screen and ( -webkit-min-device-pixel-ratio : 0 ) and (min-width:768px) and (max-width:1200px){
+    ::i-block-chrome, .wide.safari{
+        margin-bottom:150px;
+    }
+    ::i-block-chrome, a.button-call.safari {
+        font-size:18px;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1200px) and ( -webkit-min-device-pixel-ratio:0 ){
+    ::i-block-chrome, .wide.safari {
+        font-size:40px;
+    }
+    ::i-block-chrome, .safari.family{
+       background-image:url(../../img/family-md.jpg);
+    }
+}
+@media screen and (min-width:1200px) and ( -webkit-min-device-pixel-ratio:0 ){
+    ::i-block-chrome, .family{
+        min-height:900px;
+    }
+    ::i-block-chrome, .collage{
+        min-height:900px;
+    }
+    ::i-block-chrome, .safari.family{
+       background-image:url(../../img/family-lg.jpg);
+    }
+}

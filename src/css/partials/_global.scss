@@ -1,0 +1,56 @@
+/*Глобальные*/
+
+a:active{
+  outline:0;
+}
+html {
+  @media (min-width:1600px) {
+    background-image:url(../img/bg.jpg);
+  }
+}
+body{
+  background-color:$background-color;
+  color:$primary-color;
+  font-family:$font-stack;
+  font-size:$font-size-base;
+  font-weight:$font-wight;
+  line-height:$line-height;
+  @media (min-width:1600px) {
+    width:1600px;
+    margin:0 auto;
+  }
+}
+.clear{
+  clear:both;
+}
+h1, h2, h3, h4, h5, h6{
+  color:$primary-color;
+  font-weight:600;
+  vertical-align:middle;
+}
+h2{
+  font-size:$font-size-h2;
+  margin-bottom:$margin;
+}
+h3{
+  font-size:$font-size-h3;
+}
+h4{
+  font-size:$font-size-h4;
+}
+.page-size {
+  min-width:320px;
+  max-width:1600px;
+}
+.wide{
+  letter-spacing:1px;
+}
+
+
+
+
+
+
+
+
+

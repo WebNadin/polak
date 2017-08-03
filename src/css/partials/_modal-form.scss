@@ -1,0 +1,53 @@
+.alert{
+  background-color:$green;
+  border-color:$second-color;
+  color:$second-color;
+  margin:0;
+  padding:15px 0;
+  text-align:center;
+}
+
+.close{
+  color:$second-color;
+  opacity:.7;
+  right:5px;
+  top:0;
+}
+.close:hover{
+  color:$second-color;
+  opacity:.9;
+}
+
+#formButton {
+  border:1px solid $green-dark;
+  color:$green-dark;
+}
+#formButton:hover {
+  color:$primary-color;
+}
+
+#modalForm label {
+  font-weight:$font-wight;
+  padding-right:0;
+}
+#modalForm .modal-content {
+  background-color:$blue-rgba;
+  color:$second-color;
+  font-weight:$font-wight;
+
+}
+#modalForm .modal-dialog{
+  transform:translate(0, 15%);
+}
+.modal-message{
+  padding:0;
+  background-color:transparent;
+}
+#modalMessage .modal-dialog{
+  transform:translate(0, 300%);
+}
+
+.wraper-form-button {
+  margin:0 auto;
+  text-align:center;
+}

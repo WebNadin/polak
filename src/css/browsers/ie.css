@@ -1,0 +1,40 @@
+@media screen and (-ms-high-contrast:active), (-ms-high-contrast:none) and (max-width:620px){
+    .slogan h1{
+        font-size:40px;
+        padding-top:20px;
+    }
+    .button-call{
+        font-size:20px;
+        margin:60px 75px 100px 60px;
+    }
+    h2.ie{
+        font-size:38px;
+    }
+}
+@media screen and (-ms-high-contrast:active), (-ms-high-contrast:none) and (min-width:768px){
+    .slogan h1{
+        font-size:30px;
+    }
+    .button-call{
+        font-size:15px;
+    }
+    .splash ul.list{
+        margin-left:20%;
+    }
+}
+@media screen and (-ms-high-contrast:active), (-ms-high-contrast:none) and (min-width:992px){
+    .slogan h1{
+        font-size:40px;
+    }
+    .button-call{
+        font-size:20px;
+    }
+    .contacts{
+        padding-right:15px;
+    }
+}
+@media screen and (-ms-high-contrast:active), (-ms-high-contrast:none) and (min-width:1200px){
+    .splash ul.list{
+        margin-left:30%;
+    }
+}

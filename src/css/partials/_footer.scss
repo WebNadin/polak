@@ -1,0 +1,62 @@
+.collage{
+  background-image:url(../img/collage-xs-sm.jpg);
+  color:$primary-color;
+  height:$background-height-base;
+  padding:$padding-large;
+  @extend %background-img-properties;
+  @media (min-width:$screen-md-min) {
+    background-image:url(../img/collage.jpg);
+    height:$background-height-large;
+    padding:$margin;
+  }
+}
+.info{
+  background-color:$background-color-rgba;
+  padding:$padding-large;
+}
+.info h2{
+  font-size:$font-size-h2-small;
+  margin:$margin/5 0 0 0;
+  @media (min-width:$screen-md-min) {
+    font-size:$font-size-h3;
+  }
+}
+.loose-xs{
+  padding:0;
+  @media (max-width:530px) {
+    width:100%;
+    margin-left:0;
+      }
+  @media (max-width:633px) {
+    width:80%;
+    margin-left:10%;
+  }
+}
+.loose-xs-photo{
+  @media (max-width:633px) {
+    width:40%;
+  }
+}
+.loose-xs-text{
+  @media (max-width:633px) {
+    width:60%;
+  }
+}
+.vcenter{
+  display:inline-block;
+  float:none;
+  vertical-align:middle;
+}
+.wraper-info-lead{
+  margin:$margin/2 0 $margin/2 0;
+}
+.wraper-info-phone{
+  font-weight:600;
+}
+.wraper-info-photo{
+  @media (max-width:633px) {
+  }
+}
+.wraper-info-text{
+  transform:translateX(10%);
+}

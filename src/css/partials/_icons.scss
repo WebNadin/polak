@@ -1,0 +1,44 @@
+.fa{
+  color:$second-color;
+}
+.fa-circle{
+  color:$blue;
+}
+.fa-eur, .fa-graduation-cap {
+  color:$yellow;
+}
+.fa-stack{
+  font-size:$icon-font-size;
+}
+.fa-stack .fa-eur, .fa-stack .fa-home  {
+  font-size:$icon-triangle-font-size;
+}
+.slide {
+  position:relative;
+}
+.slide .fa-sort-down {
+  bottom: 15px;
+  color:$blue;
+  font-size:$icon-triangle-font-size;
+  position: relative;
+}
+.wrapper-sort-down{
+  border: 1px solid transparent;
+  border-radius: .5rem;
+  height: 45px;
+  margin: 0 auto;
+  margin-top: 20px;
+  transition: transform 1s;
+  transform: rotate(0deg);
+  width: 54px;
+  &:hover{
+    border-color: #e6e6e6;
+    cursor: pointer;
+    i.fa-sort-down {
+      color: $blue-light;
+    }
+  }
+}
+.wrapper-sort-down-rotate{
+  transform: rotate(180deg);
+}

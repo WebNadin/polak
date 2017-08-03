@@ -1,0 +1,71 @@
+.family{
+  background-image:url(../img/insurances-xs.jpg);
+  @extend %background-img-properties;
+  @media (min-width:$screen-sm-min) {
+    background-image:linear-gradient(to left, white 0%, transparent 70%), url(../img/family-sm.jpg);
+    min-height:$background-height-large;
+  }
+  @media (min-width:$screen-md-min) {
+    background-image:linear-gradient(to left, white 0%, transparent 70%), url(../img/family-md.jpg);
+  }
+  @media (min-width:$screen-lg-min) {
+    background-image:linear-gradient(to left, white 0%, transparent 70%), url(../img/family-lg.jpg);
+    height:$background-height-large;
+  }
+}
+.list li{
+  text-align:left;
+}
+
+.slogan{
+  margin-bottom:$margin-bottom-small;
+  @media (min-width:$screen-sm-min) {
+    margin-bottom:$margin;
+  }
+  @media (min-width:$screen-lg-min) {
+    font-size:$font-size-h1-large;
+    margin-bottom:$margin;
+  }
+}
+#test {
+  color:red;
+}
+.slogan h1{
+  color:$second-color;
+  font-size:$font-size-h1;
+  @media (min-width:$screen-sm-min) {
+    color:$primary-color;
+    font-size:$font-size-h2;
+    margin:$margin 0 $margin-bottom 0;
+  }
+  @media (min-width:$screen-md-min) {
+    font-size:$font-size-h1;
+    margin:$margin 0 $margin-bottom/1.7 0;
+  }
+  @media (min-width:$screen-lg-min) {
+    font-size:$font-size-h1-large;
+    margin:$margin 0 $margin-bottom/1.5 0;
+  }
+}
+.splash ul.list{
+  color:$second-color;
+  margin:$margin 33% $margin-bottom/1.5 35%;
+  opacity:.9;
+  @media (min-width:$screen-sm-min) {
+    color:$gray-light;
+    font-size:$font-size-large;
+    margin:0 33% $margin-bottom 30%;
+  }
+  @media (min-width:$screen-md-min) {
+    color:$gray-light;
+    font-size:$font-size-large;
+    margin-bottom:$margin-bottom;
+  }
+  @media (min-width:$screen-lg-min) {
+    font-size:$font-size-largest;
+    margin:0 33% $margin-bottom/2 35%;
+  }
+}
+.wrap{
+  padding:15% 33%;
+}

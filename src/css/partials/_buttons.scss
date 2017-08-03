@@ -1,0 +1,22 @@
+.btn-primary {
+  background-color:$blue;
+  border-radius:$border-radius-large;
+  color:$second-color;
+}
+.button-call{
+  font-size:$font-size-large;
+  margin:0 $margin $margin-large 60px;
+  padding:10px 20px;
+  @media (min-width:$screen-sm-min) {
+    margin:0 $margin $margin-large 60px;
+  }
+  @media (min-width:$screen-lg-min) {
+    border-radius:$border-radius-large;
+    font-size:$font-size-largest;
+  }
+}
+.close {
+  position:absolute;
+  right:-15px;
+  top:-15px;
+}
