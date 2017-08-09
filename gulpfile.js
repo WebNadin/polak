@@ -21,7 +21,7 @@ var path = {
         js: 'build/js/',
         css: 'build/css/',
         img: 'build/img',
-        fonts: 'build/fonts',
+        /*fonts: 'build/fonts',*/
         browsers:'build/css/browsers'
     },
     src: { //Пути откуда брать исходники
@@ -29,7 +29,7 @@ var path = {
         js: 'src/js/main.js', //В стилях и скриптах нам понадобятся только main файлы
         style: 'src/css/main.scss',
         img: 'src/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
-        fonts: 'src/fonts/**/*.*',
+        /*fonts: 'src/fonts/!**!/!*.*',*/
         browsers:'src/css/browsers/*.css'
     },
     watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
@@ -37,7 +37,7 @@ var path = {
         js: 'src/js/**/*.js',
         style: 'src/css/**/*.scss',
         img: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*',
+        /*fonts: 'src/fonts/!**!/!*.*',*/
         browsers:'src/css/browsers/*.css'
     },
     clean: './build'
@@ -100,10 +100,10 @@ gulp.task('image:build', function () {
 });
 
 //копируем шрифты из исходников в папку результатов компиляции и оптимизации
-gulp.task('fonts:build', function() {
+/*gulp.task('fonts:build', function() {
     gulp.src(path.src.fonts)
         .pipe(gulp.dest(path.build.fonts))
-});
+});*/
 
 //копируем файлы стилей для IE и Safari из исходников в папку результатов компиляции и оптимизации
 gulp.task('browsers:build', function() {
@@ -116,7 +116,7 @@ gulp.task('build', [
     'html:build',
     'js:build',
     'style:build',
-    'fonts:build',
+    /*'fonts:build',*/
     'image:build',
     'browsers:build'
 ]);
@@ -135,9 +135,9 @@ gulp.task('watch', function(){
     watch([path.watch.img], function(event, cb) {
         gulp.start('image:build');
     });
-    watch([path.watch.fonts], function(event, cb) {
+    /*watch([path.watch.fonts], function(event, cb) {
         gulp.start('fonts:build');
-    });
+    });*/
     watch([path.watch.browsers], function(event, cb) {
         gulp.start('browsers:build');
     });
