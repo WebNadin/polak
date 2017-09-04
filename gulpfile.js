@@ -95,7 +95,6 @@ gulp.task('image:build', function () {
         .pipe(gulp.dest(path.build.img)) //И бросим в build
         .pipe(reload({stream: true}));
 });
-
 //копируем файлы стилей для IE и Safari из исходников в папку результатов компиляции и оптимизации
 gulp.task('browsers:build', function() {
     gulp.src(path.src.browsers)
