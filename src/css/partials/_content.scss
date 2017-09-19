@@ -1,16 +1,15 @@
-.caption ul{
-  list-style:none;
-}
-.content {
+.content{
   padding-right:0;
 }
 .details{
   border:none;
   border-radius:$border-radius-base;
+  display:block;
   max-height:0;
   overflow:hidden;
   padding:$padding-small;
   position:absolute;
+  text-align:left;
   transition:all .5s;
   width:100%;
   z-index:2000;
@@ -20,10 +19,15 @@
   font-size:16px;
   padding:$padding-small;
 }
+.devider .fa {
+  color:$gray;
+  font-size:6px;
+  margin-right:5px;
+  vertical-align:middle;
+}
 .devider:last-child{
   border-bottom:none;
 }
-
 .opened{
   background-color:#fff;
   border:1px solid $gray-lightest;
@@ -37,7 +41,7 @@
 .thumbnail{
   background-color:$background-color;
   border:none;
-  list-style:none;
+  /*list-style:none;*/
 }
 .triangle-border{
   border:1px solid $gray-lightest;
@@ -55,9 +59,9 @@
   margin-top:20px;
   position:relative;
 }
-.wraper-insurance {
+/*.wrapper-insurance {
   background-color:#0a0;
-}
+}*/
 .wrapper-lower{
   height:$h3-height;
   padding-top:$padding-base;
