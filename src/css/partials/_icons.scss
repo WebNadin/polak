@@ -37,7 +37,7 @@
   transform: rotate(0deg);
   width: 54px;
   &:hover{
-    border-color: #e6e6e6;
+    border-color: $gray-lightest;
     cursor: pointer;
     i.fa-sort-down {
       color: $blue-light;
