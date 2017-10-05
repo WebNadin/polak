@@ -1,3 +1,6 @@
+body {
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 @media screen and (-ms-high-contrast:active), (-ms-high-contrast:none) and (max-width:620px){
     .slogan h1{
         font-size:40px;
