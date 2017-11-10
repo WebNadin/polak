@@ -95,6 +95,7 @@ gulp.task('image:build', function () {
         .pipe(gulp.dest(path.build.img)) //И бросим в build
         .pipe(reload({stream: true}));
 });
+
 //копируем файлы стилей для IE и Safari из исходников в папку результатов компиляции и оптимизации
 gulp.task('browsers:build', function() {
     gulp.src(path.src.browsers)
@@ -129,6 +130,35 @@ gulp.task('watch', function(){
     });
 });
 
+
+//отслеживаем изменения всех файлов
+gulp.task('watch-css-html', function(){
+    watch([path.watch.style], function(event, cb) {
+        gulp.start('style:build');
+    });
+    watch([path.watch.html], function(event, cb) {
+        gulp.start('html:build');
+    });
+    watch([path.watch.browsers], function(event, cb) {
+        gulp.start('browsers:build');
+    });
+});
+
+gulp.task('watch-css-html-js', function(){
+    watch([path.watch.style], function(event, cb) {
+        gulp.start('style:build');
+    });
+    watch([path.watch.html], function(event, cb) {
+        gulp.start('html:build');
+    });
+    watch([path.watch.browsers], function(event, cb) {
+        gulp.start('browsers:build');
+    });
+    watch([path.watch.js], function(event, cb) {
+        gulp.start('js:build');
+    });
+});
+
 //живая перезагрузка браузера при изменении файлов
 gulp.task('webserver', function () {
     browserSync(config);
@@ -141,3 +171,5 @@ gulp.task('clean', function (cb) {
 
 //запускаем все задачи
 gulp.task('default', ['build', 'webserver', 'watch']);
+gulp.task('light', ['build', 'webserver', 'watch-css-html']);
+gulp.task('light+js', ['build', 'webserver', 'watch-css-html-js']);
