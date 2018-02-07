@@ -14,12 +14,8 @@ body{
   font-size:$font-size-base;
   font-weight:$font-wight;
   line-height:$line-height;
-  /*max-width:1400px;*/
+  max-width:1600px;
   margin:0 auto;
-  /*@media (min-width:1600px) {
-    width:1600px;
-    margin:0 auto;
-  }*/
 }
 .clear{
   clear:both;
