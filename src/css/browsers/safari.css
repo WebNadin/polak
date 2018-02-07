@@ -1,3 +1,13 @@
+@media screen and ( -webkit-min-device-pixel-ratio:0 ){
+    ::i-block-chrome, body{
+        font-family:Helvetica, Arial, sans-serif;
+    }
+    ::i-block-chrome, .safari.family{
+        background-image:url(../../img/family-sm.jpg);
+        background-color:rgba(255, 255, 255, .7);
+        background-blend-mode:darken;
+    }
+}
 @media screen and (max-width:505px) and ( -webkit-min-device-pixel-ratio:0 ){
     ::i-block-chrome, p.wraper-info-phone{
         font-family:Helvetica, Arial, sans-serif;
@@ -25,13 +35,8 @@
         font-size:30px;
     }
     ::i-block-chrome, .safari.family{
-        background:rgba(255,255,255,.7), url(../../img/family-sm.jpg);
-        /*background-color:rgba(255, 255, 255, .7);
-        background-image:url(../../img/family-sm.jpg);*/
+        background-image:url(../../img/family-sm.jpg);
     }
-    /*::i-block-chrome, .header-text-wraper{
-        background-color:rgba(255, 255, 255, .7);
-    }*/
 }
 @media screen and ( -webkit-min-device-pixel-ratio:0 ) and (min-width:768px) and (max-width:1200px){
     ::i-block-chrome, .wide.safari{
