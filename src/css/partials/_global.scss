@@ -4,9 +4,7 @@ a:active{
   outline:0;
 }
 html {
-  @media (min-width:1600px) {
-    background-image:url(../img/bg.jpg);
-  }
+  background-color:$background-color;
 }
 body{
   background-color:$background-color;
@@ -16,10 +14,12 @@ body{
   font-size:$font-size-base;
   font-weight:$font-wight;
   line-height:$line-height;
-  @media (min-width:1600px) {
+  /*max-width:1400px;*/
+  margin:0 auto;
+  /*@media (min-width:1600px) {
     width:1600px;
     margin:0 auto;
-  }
+  }*/
 }
 .clear{
   clear:both;

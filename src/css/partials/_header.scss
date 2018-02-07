@@ -1,6 +1,7 @@
 .family{
   background-image:url(../img/insurances-xs.JPG);
-  @extend %background-img-properties;
+  background-position:center;
+  background-size:cover;
   @media (min-width:$screen-sm-min) {
     background-image:linear-gradient(to left, white 0%, transparent 70%), url(../img/family-sm.jpg);
     min-height:$background-height-large;
@@ -13,10 +14,28 @@
     height:$background-height-large;
   }
 }
-.list li{
-  text-align:left;
+.list{
+  li{
+    text-align:left;
+  }
+  &-wraper{
+    color:$second-color;
+    opacity:.9;
+    margin:0 auto 10% auto;
+    max-width:150px;
+    @media (min-width:$screen-sm-min) {
+      color:$gray-light;
+      font-size:$font-size-large;
+    }
+    @media (min-width:$screen-md-min) {
+      color:$gray-light;
+      font-size:$font-size-large;
+    }
+    @media (min-width:$screen-lg-min) {
+      font-size:$font-size-largest;
+    }
+  }
 }
-
 .slogan{
   margin-bottom:$margin-bottom-small;
   @media (min-width:$screen-sm-min) {
@@ -26,9 +45,6 @@
     font-size:$font-size-h1-large;
     margin-bottom:$margin;
   }
-}
-#test {
-  color:red;
 }
 .slogan h1{
   color:$second-color;
@@ -47,7 +63,7 @@
     margin:$margin 0 $margin-bottom/1.5 0;
   }
 }
-.splash ul.list{
+/*.splash ul.list{
   color:$second-color;
   margin:$margin 33% $margin-bottom/1.5 35%;
   opacity:.9;
@@ -65,7 +81,7 @@
     font-size:$font-size-largest;
     margin:0 33% $margin-bottom/2 35%;
   }
-}
+}*/
 .wrap{
   padding:15% 33%;
 }

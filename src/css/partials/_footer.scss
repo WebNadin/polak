@@ -4,7 +4,8 @@
   height:$background-height-base;
   min-width:368px;
   padding:$padding-large;
-  @extend %background-img-properties;
+  background-position:bottom;
+  background-size:cover;
   @media (min-width:$screen-md-min) {
     background-image:url(../img/collage.jpg);
     height:$background-height-large;
