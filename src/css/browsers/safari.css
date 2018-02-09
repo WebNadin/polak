@@ -2,10 +2,8 @@
     ::i-block-chrome, body{
         font-family:Helvetica, Arial, sans-serif;
     }
-    ::i-block-chrome, .safari.family{
-        background-image:url(../../img/family-sm.jpg);
-        background-color:rgba(255, 255, 255, .7);
-        background-blend-mode:darken;
+    ::i-block-chrome, .overlay_header{
+        display:block;
     }
 }
 @media screen and (max-width:505px) and ( -webkit-min-device-pixel-ratio:0 ){
@@ -29,13 +27,20 @@
     ::i-block-chrome, a.button-call.safari{
         margin-top:50px;
     }
-}
-@media screen and ( -webkit-min-device-pixel-ratio:0 ) and (min-width:768px) and (max-width:992px){
-    ::i-block-chrome, .wide.safari{
-        font-size:30px;
+    ::i-block-chrome, .wide.safari, .list-wraper, .contacts{
+        color:#fff;
     }
     ::i-block-chrome, .safari.family{
         background-image:url(../../img/family-sm.jpg);
+    }
+    ::i-block-chrome, .overlay_header{
+        opacity:.3;
+    }
+
+}
+@media screen and ( -webkit-min-device-pixel-ratio:0 ) and (min-width:768px) and (max-width:992px){
+    ::i-block-chrome, .wide.safari{
+        font-size:40px;
     }
 }
 @media screen and ( -webkit-min-device-pixel-ratio:0 ) and (min-width:768px) and (max-width:1200px){
@@ -53,9 +58,6 @@
     ::i-block-chrome, .safari.family{
         background-image:url(../../img/family-md.jpg);
     }
-    ::i-block-chrome, .header-text-wraper{
-        background-color:rgba(255, 255, 255, .7);
-    }
 }
 @media screen and (min-width:1200px) and ( -webkit-min-device-pixel-ratio:0 ){
     ::i-block-chrome, .family{
@@ -66,8 +68,5 @@
     }
     ::i-block-chrome, .safari.family{
         background-image:url(../../img/family-lg.jpg);
-    }
-    ::i-block-chrome, .header-text-wraper{
-        background-color:rgba(255, 255, 255, .7);
     }
 }
