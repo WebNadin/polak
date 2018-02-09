@@ -5,6 +5,9 @@
     ::i-block-chrome, .overlay_header{
         display:block;
     }
+    ::i-block-chrome, .list-wraper{
+        opacity:1;
+    }
 }
 @media screen and (max-width:505px) and ( -webkit-min-device-pixel-ratio:0 ){
     ::i-block-chrome, p.wraper-info-phone{
@@ -30,13 +33,18 @@
     ::i-block-chrome, .wide.safari, .list-wraper, .contacts{
         color:#fff;
     }
+
     ::i-block-chrome, .safari.family{
         background-image:url(../../img/family-sm.jpg);
     }
     ::i-block-chrome, .overlay_header{
         opacity:.3;
     }
-
+}
+@media screen and (max-width:992px) and ( -webkit-min-device-pixel-ratio:0 ){
+    ::i-block-chrome, .overlay_collage{
+        opacity:.3;
+    }
 }
 @media screen and ( -webkit-min-device-pixel-ratio:0 ) and (min-width:768px) and (max-width:992px){
     ::i-block-chrome, .wide.safari{

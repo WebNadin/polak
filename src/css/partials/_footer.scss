@@ -14,6 +14,8 @@
   }
 }
 .info{
+  position:relative;
+  z-index:10;
   background-color:$background-color-rgba;
   margin:15px 0;
   padding:$padding-large;
@@ -21,6 +23,7 @@
   z-index:10;
   @media (max-width:$screen-sm-min) {
     text-align:center;
+    margin: 30px 15px;
   }
 }
 .info .wraper-info-text h2{
