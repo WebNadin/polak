@@ -33,12 +33,8 @@
     ::i-block-chrome, .wide.safari, .list-wraper, .contacts{
         color:#fff;
     }
-
     ::i-block-chrome, .safari.family{
         background-image:url(../../img/family-sm.jpg);
-    }
-    ::i-block-chrome, .overlay_header{
-        opacity:.3;
     }
 }
 @media screen and (max-width:992px) and ( -webkit-min-device-pixel-ratio:0 ){
