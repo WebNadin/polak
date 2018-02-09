@@ -1,7 +1,9 @@
 .family{
+  position:relative;
   background-image:url(../img/insurances-xs.JPG);
   background-position:center;
   background-size:cover;
+  z-index:1;
   @media (min-width:$screen-sm-min) {
     background-image:linear-gradient(to left, white 0%, transparent 70%), url(../img/family-sm.jpg);
     min-height:$background-height-large;
@@ -14,6 +16,11 @@
     height:$background-height-large;
   }
 }
+.header-info{
+  position:relative;
+  z-index:10;
+}
+
 .list{
   li{
     text-align:left;
@@ -63,25 +70,10 @@
     margin:$margin 0 $margin-bottom/1.5 0;
   }
 }
-/*.splash ul.list{
-  color:$second-color;
-  margin:$margin 33% $margin-bottom/1.5 35%;
-  opacity:.9;
-  @media (min-width:$screen-sm-min) {
-    color:$gray-light;
-    font-size:$font-size-large;
-    margin:0 33% $margin-bottom 30%;
-  }
-  @media (min-width:$screen-md-min) {
-    color:$gray-light;
-    font-size:$font-size-large;
-    margin-bottom:$margin-bottom;
-  }
-  @media (min-width:$screen-lg-min) {
-    font-size:$font-size-largest;
-    margin:0 33% $margin-bottom/2 35%;
-  }
-}*/
+.splash{
+  position:relative;
+  z-index:10;
+}
 .wrap{
   padding:15% 33%;
 }
