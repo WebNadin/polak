@@ -22,6 +22,9 @@
         font-size:18px;
         margin-top:50px;
     }
+    ::i-block-chrome, .contacts_small{
+        font-size:16px;
+    }
 }
 @media screen and (min-width:768px) and ( -webkit-min-device-pixel-ratio:0 ){
     ::i-block-chrome, p.wraper-info-phone{
@@ -45,6 +48,10 @@
 @media screen and ( -webkit-min-device-pixel-ratio:0 ) and (min-width:768px) and (max-width:992px){
     ::i-block-chrome, .wide.safari{
         font-size:40px;
+    }
+    ::i-block-chrome, .safari.slogan_small {
+        font-size:30px;
+        margin-top:50px;
     }
 }
 @media screen and ( -webkit-min-device-pixel-ratio:0 ) and (min-width:768px) and (max-width:1200px){
