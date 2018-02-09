@@ -1,7 +1,9 @@
 .family{
+  position:relative;
   background-image:url(../img/insurances-xs.JPG);
   background-position:center;
   background-size:cover;
+  z-index:1;
   @media (min-width:$screen-sm-min) {
     background-image:linear-gradient(to left, white 0%, transparent 70%), url(../img/family-sm.jpg);
     min-height:$background-height-large;
@@ -14,6 +16,11 @@
     height:$background-height-large;
   }
 }
+.header-info{
+  position:relative;
+  z-index:10;
+}
+
 .list{
   li{
     text-align:left;
@@ -63,7 +70,10 @@
     margin:$margin 0 $margin-bottom/1.5 0;
   }
 }
-
+.splash{
+  position:relative;
+  z-index:10;
+}
 .wrap{
   padding:15% 33%;
 }
