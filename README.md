@@ -1,29 +1,32 @@
-#  Business card site (Scss/Html/JavaScript/jQuery/Gulp/Bootstrap)
+#  Business card (JavaScript, jQuery, Bootstrap)
 
+![Website working gif](https://github.com/WebNadin/polak/raw/master/src/img/readme-img.gif)
 
-A business card site for an insurance agent in the Czech Republic
+This is a website for an insurance agent in the Czech Republic.
 
+#### Full demo - [A.Polak](http://webnadin.inf.ua/pojistim/)
 
-#### Full demo - [A.Polak](http://pojistim.com)
+In this project I mastered:
+ - Gulp processing (SCSS, HTML converting and minimizing, images optimizing, watchers)
+ - smooth animation (CSS,jQuery)
+ - Bootstrap grid
+ - Google Forms
+ - multilingualism
 
-### Functionality:
+ I created  design and markup by myself.
 
-  - multilingual responsive Landing Page
-  - smooth animation is made using CSS and jQuery
-  - jQuery ,JavaScript, Sass, BootStrap, Git, Gulp
-  - Grid and respondivity base on Bootstrap
-  - Markup based on SCSS, CSS3, HTML5, Bootstrap, Font Awesome
-  - Feedback form (Google Forms);
-  - my design (Photoshop)
+### Installation
 
-### Gulp processing:
+You could follow next steps to deploy a local project:
+ - clone branch `master` with `git clone https://github.com/WebNadin/polak.git` or fork it and then clone it
+ from your forked repo
 
-  - SCSS - conveted in CSS, minimized, comments deleted
-  - HTML - minimised, comments deleted
-  - Images - optimized
-  - Written watchers for separate parts
+ ```
+$ npm i
+$ gulp
+```
 
-### Deploy:
+License
+----
 
-1) Install all node modules. Enter in console: npm install
-2) Make build. Enter in console: gulp
+WebNadin
